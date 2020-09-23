@@ -15,7 +15,6 @@ module.exports = function(app) {
     
     var bestMatch = {
       name: "",
-      photo: "",
       friendDifference: Infinity
     };
 
@@ -45,7 +44,6 @@ module.exports = function(app) {
       if (Difference <= bestMatch.friendDifference) {
         
         bestMatch.name = currentFriend.name;
-        bestMatch.photo = currentFriend.photo;
         bestMatch.friendDifference = totalDifference;
       }
     }
