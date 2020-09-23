@@ -44,7 +44,7 @@ module.exports = function(app) {
       if (Difference <= bestMatch.friendDifference) {
         
         bestMatch.name = currentFriend.name;
-        bestMatch.friendDifference = totalDifference;
+        bestMatch.friendDifference = Difference;
       }
     }
 
